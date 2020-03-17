@@ -4,8 +4,8 @@
 //
 //  Created by pgg on 2020/3/6.
 //  Copyright © 2020 Coder3. All rights reserved.
-//
-
+//  请务 删除
+//  作者github地址： https://github.com/penghero/PGGuideView
 #import <UIKit/UIKit.h>
 @class PGGuideItem;
 NS_ASSUME_NONNULL_BEGIN
