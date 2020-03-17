@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJd-aM-vMq">
+                                <rect key="frame" x="88" y="50" width="114" height="57"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="cba-Mh-fhQ"/>
+                                    <constraint firstAttribute="width" constant="114" id="sxf-uR-JkQ"/>
+                                </constraints>
+                                <state key="normal" title="第一步引导"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-B8-qPp">
+                                <rect key="frame" x="162" y="120" width="114" height="57"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="3WN-2N-usr"/>
+                                    <constraint firstAttribute="width" constant="114" id="jOi-1b-Dcg"/>
+                                </constraints>
+                                <state key="normal" title="第二步引导"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noS-HK-LpY">
+                                <rect key="frame" x="100" y="246" width="114" height="50"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Al-FZ-pn0"/>
+                                    <constraint firstAttribute="width" constant="114" id="FLL-gx-s22"/>
+                                </constraints>
+                                <state key="normal" title="第三步引导"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnq-UP-GoC">
+                                <rect key="frame" x="162" y="363" width="114" height="57"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="iGf-eA-OaK"/>
+                                    <constraint firstAttribute="width" constant="114" id="uDx-Nk-QNu"/>
+                                </constraints>
+                                <state key="normal" title="第四步引导"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIQ-xz-QMg">
+                                <rect key="frame" x="59" y="510" width="257" height="57"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="QSP-tz-uHr"/>
+                                </constraints>
+                                <state key="normal" title="第五步引导-再来一次"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showNextGuide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z3W-z9-DHy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="noS-HK-LpY" firstAttribute="top" secondItem="FC9-B8-qPp" secondAttribute="bottom" constant="69" id="1zW-Q1-aua"/>
+                            <constraint firstItem="ZIQ-xz-QMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="3vy-Us-1Lo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZIQ-xz-QMg" secondAttribute="trailing" constant="59" id="Kf4-In-WDY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rnq-UP-GoC" secondAttribute="trailing" constant="99" id="LKF-Hi-YXQ"/>
+                            <constraint firstItem="FC9-B8-qPp" firstAttribute="top" secondItem="bJd-aM-vMq" secondAttribute="bottom" constant="13" id="LnK-KR-zZ4"/>
+                            <constraint firstItem="FC9-B8-qPp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="Mlj-qD-bVa"/>
+                            <constraint firstItem="rnq-UP-GoC" firstAttribute="top" secondItem="noS-HK-LpY" secondAttribute="bottom" constant="67" id="T0l-sG-rju"/>
+                            <constraint firstItem="noS-HK-LpY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="fTA-jz-J1o"/>
+                            <constraint firstItem="bJd-aM-vMq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="uru-tL-FgS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZIQ-xz-QMg" secondAttribute="bottom" constant="100" id="xvO-lI-e27"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FC9-B8-qPp" secondAttribute="trailing" constant="99" id="xxC-Y6-mYb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tap1" destination="bJd-aM-vMq" id="EyY-Hc-O7W"/>
+                        <outlet property="tap2" destination="FC9-B8-qPp" id="dUP-tZ-44W"/>
+                        <outlet property="tap3" destination="noS-HK-LpY" id="bbn-iO-viB"/>
+                        <outlet property="tap4" destination="rnq-UP-GoC" id="1Yt-5N-ocw"/>
+                        <outlet property="tap5" destination="ZIQ-xz-QMg" id="h5N-1L-5Ng"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
