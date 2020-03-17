@@ -8,7 +8,7 @@
 ![image](https://github.com/penghero/PGGuideView/blob/master/guide.gif)
 # 部分讲解
 1.开源属性
-
+```
 /// 是否显示气泡中头像icon
 @property (nonatomic, assign) BOOL isShowIcon;
 /// 气泡颜色
@@ -45,9 +45,9 @@
 @property (nonatomic, assign) CGFloat aperturesMargin;
 /// 光圈圆角
 @property (nonatomic, assign) CGFloat aperturesRadius;
-
+```
 2.引导代理
-
+```
 /// 引导数据个数
 /// @param guideView guideView description
 - (NSInteger)numberOfGuidesInGuideView:(PGGuideView *)guideView;
@@ -65,21 +65,26 @@
 /// 引导结束
 /// @param guideView  guideView description
 - (void)guideViewEnd:(PGGuideView *)guideView;
-
+```
 3.使用用例
 3.1添加头文件
+```
 #import "PGGuideView.h"
 #import "PGGuideItem.h"
-#import "PGBubbleForGuide.h
+#import "PGBubbleForGuide.h"
+```
 3.2 遵守协议 PGGuideViewDelegate
 3.3初始化
+```
     /// 初始化方式2
     self.pgGuideView = [[PGGuideView alloc] initWithFrame:self.view.bounds];
     self.pgGuideView.delegate = self;
     [self.pgGuideView showGuideAtIndex:0];
     /// 加到控制器view上
     [self.view addSubview:self.pgGuideView];
+ ```
 3.4 实现协议
+```
 #pragma mark - 新版引导
 - (NSInteger)numberOfGuidesInGuideView:(PGGuideView *)guideView {
     NSLog(@"---鹏哥哥引导---一共的引导数量");
@@ -181,6 +186,6 @@
     
     return @[item0, item1, item2, item3, item4, item5];
 }
-
+```
 
 
